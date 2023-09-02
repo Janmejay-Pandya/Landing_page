@@ -159,6 +159,12 @@ footer{
     font-weight: bolder;
     margin-top: 20px;
 } 
+.flex-all-center{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
 
 
 /* Default styles */
