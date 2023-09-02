@@ -1,0 +1,235 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: lavender
+}
+header{
+    background-color:#5a3d88;
+    font-family: 'Lato', sans-serif;
+
+}
+nav{
+    display: flex;
+}
+.logo{
+
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 53px;
+    padding: 0px 23px;
+}
+
+nav ul{
+    
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    text-align: right;
+    padding: 0px 23px;
+    list-style: none;
+    cursor: pointer;
+}
+nav ul li:hover{
+    color: aliceblue;
+    font-weight: bolder;
+    
+}
+
+.search{
+    display: flex;
+    justify-content:baseline;
+    position: absolute;
+    height: fit-content;
+    width: 287px;
+    transform: translateY(16px);
+}
+.search input{
+    width: 287px;
+    height: 24px;
+    border-radius: 23px;
+    padding: 0px 12px;
+}
+main{
+    min-height: calc(100vh - 56px - 12vh);
+}
+.main_img{
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    
+}
+.overlay-text{
+    bottom: 140px;
+    position: absolute;
+    font-size:xx-large;
+    color:black;
+    font-weight: bolder;
+}
+.location1{
+    
+    font-weight: bold;
+    font-size: x-large;
+    padding: 25px 473px;
+    margin-bottom: 15px;
+    text-decoration: underline wavy 2px black ;
+}
+ a img:hover{
+    
+    width: 234px;
+    height: 259px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+} 
+ .place1{
+    padding: 0 12px;
+    font-style: italic;
+    padding-bottom: 23px;
+}
+.overlay{
+    position: relative;
+    top: 28px;
+    left: 20px;
+    font-size: larger;
+}
+.images .image{
+    height: 250px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0px 23px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    border-radius: 23px;
+    
+}
+.images .image:hover{
+    filter: drop-shadow(5px 5px 8px black);
+
+    
+}
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 39px;
+    
+}
+.location2{
+    font-weight: bold;
+    font-size: x-large;
+    padding: 25px 489px;
+    margin-bottom: 15px;
+    text-decoration: underline wavy 2px black ;
+}
+.subtitle{
+    font-weight: bold;
+    color: rgb(14, 14, 14);
+    padding: 0px 5px;
+}
+footer{
+    height: 12vh;
+    background-color:#5a3d88;
+    color: aliceblue;
+    font-weight: bolder;
+    margin-top: 20px;
+} 
+
+
+/* Default styles */
+
+/* Your existing CSS code here */
+
+/* Media query for tablets and larger screens */
+@media (min-width: 768px) {
+    /* Adjustments for tablets and larger screens go here */
+    header {
+        width: 100%;
+        /* Example: Increase header font size or change the layout */
+    }
+    nav{
+        
+        /* Example: Increase padding for navigation items */
+    }
+    .search input {
+        /* Example: Increase search input width */
+    }
+    .location1,
+    .location2 {
+        /* Example: Adjust padding for location sections */
+    }
+    .images .image {
+        /* Example: Modify image dimensions or spacing */
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    /* Adjustments for mobile devices go here */
+    header {
+        height: 200px;
+        /* Example: Change the header layout for mobile */
+    }
+    nav{
+        padding-top: 12px;
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        flex-direction: column;
+        /* Example: Modify navigation layout for mobile */
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        padding-top: 12px;
+        
+
+    }
+    nav ul li{
+        padding-top: 12px;
+    }
+    .search {
+        position: relative;
+        right: 311px;
+        width: 0px;
+
+        /* Example: Adjust search bar positioning for mobile */
+    }
+    main {
+        /* Example: Modify main content layout for mobile */
+    }
+    .location1,
+    .location2 {
+        padding: 15px 20px;
+        text-align: center;
+        /* Example: Adjust padding and text alignment for mobile */
+    }
+    .images {
+        flex-direction: column;
+        /* Example: Modify image layout for mobile */
+    }
+    .images .image {
+        /* Example: Adjust image dimensions for mobile */
+    }
+    footer {
+        /* Example: Modify footer layout for mobile */
+    }
+}
+
+
